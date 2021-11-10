@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Форма опроса</title>
+</head>
+<style>
+    body {
+        font-family: "Qanelas";
+    }
+
+    .about{
+        margin: 0px auto;
+    }
+
+    .about__body{
+        max-width: 600px;
+        margin: 0px auto;
+    }
+
+
+    .about__header{
+        margin: 0px 0px 20px 0px;
+    }
+
+    .about__text{
+        font-family: "Qanelas";
+        max-width: 600px;
+        color: rgba(80, 89, 89, 0.98);
+        font-size: 14px;
+        font-weight: 300;
+        text-align: center;
+        line-height: 26px;
+        margin: 0px auto;
+    }
+
+    .about__title {
+        text-align: center;
+        font-size: 20pt;
+        margin: 40px 0px 5px 0px;
+    }
+
+    .main{
+        padding-top: 5px;
+        max-width: 800px;
+        min-height: 200px;
+        background-color: #F9F9F9
+;
+        font-family: "Qanelas";
+    }
+
+
+    .main__text{
+        text-align: center;
+        padding: 5px;
+        margin: 10px auto;
+    }
+
+    .main__row{
+        display: flex;
+        margin-bottom: 10px;
+        padding: 5px 20px;
+    }
+
+    .row__text{
+        display: block;
+        flex: 50%;
+        text-align: right;
+        padding: 0px 10px;
+    }
+
+    .row__field{
+        width: 20px;
+        display: block;
+        flex: 50%;
+        padding: 0px 0px;
+    }
+
+    .row__radiobuttons p {
+        margin-top: 1px;
+        padding-left:
+    }
+
+    .row__radiobuttons input {
+        padding-left: 2px;
+    }
+
+    textarea {
+
+    }
+
+
+
+</style>
+
+<body style="background-color:#B2D2FF">
+    <div class="about">
+        <div class="about__body">
+            <div class="about__header">
+                <div class="about__title title">Оставьте отзыв об обучении в Финансовом Университете</div>
+                <div class="about__text">Мы будем рады узнать мнение студентов ИТиАБД!</div>
+            </div>
+
+            <div class="main">
+                <div class="main__row">
+                    <div class="row__text"><label for="name">Имя:</label></div>
+                    <div class="row__field"><input id="name" type="text" size="30" placeholder="Введите имя"></div>
+                </div>
+                <div class="main__row">
+                    <div class="row__text"><label for="edtype">Вид обучения</label></div>
+                    	<div class="row__field">
+                        	<div class = "row__radiobuttons">
+                                  <div>
+                                      <input type="radio" id="budget" name="edtype" value="budget">
+                                      <label for="budget">Бюджет</label>
+
+                                      <input type="radio" id="commerce" name="edtype" value="commerce">
+                                      <label for="commerce">Коммерция</label>
+                                  </div>
+				            </div>
+                        </div>
+                </div>
+                <div class="main__row">
+                    <div class="row__text"><label for="type">Направление</label></div>
+                    <div class="row__field">
+                        <select id="type" name="type">
+                            <option value="pi">Прикладная Информатика</option>
+                            <option value="pm">Прикладная Математика</option>
+                            <option value="bi">Бизнес Информатика</option>
+                            <option value="ib">Информационная Безопасность</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="main__row">
+                    <div class="row__text"><label for="kurs">Курс</label></div>
+                    	<div class="row__field">
+                        	<div class = "row__radiobuttons">
+                                <div>
+                           		    <p><input type="radio" id="k1" name="kurs"><laber for="k1">1</laber></p>
+                                    <p><input type="radio" id="k2" name="kurs"><laber for="k2">2</laber></p>
+                                    <p><input type="radio" id="k3" name="kurs"><laber for="k3">3</laber></p>
+                                    <p><input type="radio" id="k4" name="kurs"><laber for="k4">4</laber></p>
+                                </div>
+				            </div>
+                        </div>
+                </div>
+                <div class="main__row">
+                    <div class="row__text"><label for="feedback">Оставьте Ваш отзыв</label></div>
+                    <div class="row__field">
+                        <textarea name="comment" cols="30" rows="6">
+                        </textarea>
+                    </div>
+                </div>
+                <p style="text-align: center"><button>Отправить</button></p>
+        </div>
+    </div>
+</body>
+</html>
